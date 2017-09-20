@@ -3,8 +3,9 @@
 echo "-----------------------"
 echo "Getting all the needed stuff via apt-get"
 echo "-----------------------"
-
-sudo apt-get install cmake openjdk-8-jdk ffmpeg ant
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install cmake openjdk-8-jdk ant git
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf
 
 echo "-----------------------"
